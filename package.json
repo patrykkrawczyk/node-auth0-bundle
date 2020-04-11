@@ -1,0 +1,28 @@
+{
+  "name": "node-auth0-bundled",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.0",
+    "@babel/preset-env": "7.6.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "auth0": "^2.24.0"
+  },
+  "keywords": [
+    "aws",
+    "api-gateway",
+    "auth0",
+    "formidable",
+    "lambda",
+    "node"
+  ]
+}

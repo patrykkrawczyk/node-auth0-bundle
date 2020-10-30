@@ -3,12 +3,10 @@
 const webpack = require("webpack");
 
 module.exports = {
-  entry: './src/index.js',
-  target: 'node',
-  mode: 'production',
-  plugins: [
-    new webpack.DefinePlugin({ "global.GENTLY": false })
-  ],
+  entry: "./src/index.js",
+  target: "node",
+  mode: "production",
+  plugins: [new webpack.DefinePlugin({ "global.GENTLY": false })],
   // externals: [nodeExternals()],
   module: {
     rules: [
@@ -17,18 +15,18 @@ module.exports = {
         include: __dirname,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
         sideEffects: true,
       },
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [".js", ".jsx"],
   },
   output: {
-    filename: 'node-auth0-bundle.js',
-    library: '',
-    libraryTarget: 'commonjs'
-  }
+    filename: "node-auth0-bundle.js",
+    library: "",
+    libraryTarget: "commonjs",
+  },
 };

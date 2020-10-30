@@ -14,6 +14,14 @@ Solves issues like:
 
 To use it simply add to your project `node-auth0-bundle.js` file from the `dist` directory.
 
-`import { ManagementClient } from './libs/node-auth0-bundle'`
+```js
+import { ManagementClient } from './libs/node-auth0-bundle';
+import { AuthenticationClient } from './libs/node-auth0-bundle';
+```
 
-`import { AuthenticationClient } from './libs/node-auth0-bundle'`
+
+## Upgrade and build
+
+- To upgrade to the latest version of `auth0`, run `npm install auth0@latest`
+- To create a new bundle, run `npm run build`
+- To use it, add to your project `node-auth0-bundle.js` file from the `dist` directory.
